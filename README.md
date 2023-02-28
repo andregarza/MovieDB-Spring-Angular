@@ -15,7 +15,7 @@ La aplicación tiene como propósito crear una base de datos de películas con s
 
 A continuación se mencionara con más detalle parte de la funcionalidad de la aplicación 
 
-1. Prácticas ágiles: Se escogeran diferentes practicas Agiles que son justificadas, se adjunta el [Readme](https://github.com/andregarza/Proyecto_Modulo1/tree/main/Tema%201) donde esta lo antes mencionado con detalle
+1. Prácticas ágiles:  Se escogeran diferentes practicas Agiles que son justificadas, se adjunta el [Readme](https://github.com/andregarza/Proyecto_Modulo1/tree/main/Tema%201) donde esta lo antes mencionado con detalle
 
 
 2. Estructura del
@@ -29,10 +29,10 @@ datos: La aplicación se conecta correctamente a una base de datos de MYSQL que 
 
 4. Funcionalidad y
 alcance de la
-aplicación: La app tiene la funcionalidad principal de guardar películas que has visto, y su característica principal es la de buscar películas con toda su información e incluso link solo con el nombre de la película, en el Dashboard principal se nos presenta un botón con la leyenda search a movie que al presionarlo nos abre una ventana de diálogo donde podemos interactuar de forma dinámica al insertar un nombre de pelicula y se nos presenta todos sus datos y la posibilidad de guardarla película en nuestro repositorio, utiliza todos los métodos Rest del backend y correctamente muestra al usuario los cambios, al utilizar botones interactivos que no obstaculizan el uso de los métodos Rest, para la parte de manejo de errores se creó un manejador global de excepciones que cubre las excepciones más comunes que el usuario pueda encontrarse así como un manejador de excepciones para métodos HTTP como lo son el método 401 y 403 que manejan las excepciones para el contenido que no esté autorizado o no tenga permitido el uso de algún método.
+aplicación:  La app tiene la funcionalidad principal de guardar películas que has visto, y su característica principal es la de buscar películas con toda su información e incluso link solo con el nombre de la película, en el Dashboard principal se nos presenta un botón con la leyenda search a movie que al presionarlo nos abre una ventana de diálogo donde podemos interactuar de forma dinámica al insertar un nombre de pelicula y se nos presenta todos sus datos y la posibilidad de guardarla película en nuestro repositorio, utiliza todos los métodos Rest del backend y correctamente muestra al usuario los cambios, al utilizar botones interactivos que no obstaculizan el uso de los métodos Rest, para la parte de manejo de errores se creó un manejador global de excepciones que cubre las excepciones más comunes que el usuario pueda encontrarse así como un manejador de excepciones para métodos HTTP como lo son el método 401 y 403 que manejan las excepciones para el contenido que no esté autorizado o no tenga permitido el uso de algún método.
 
 
-5. Testing: : Se realizaron pruebas unitarias al código utilizando JUnit, asegurando el correcto funcionamiento de el controlador y de la lógica de negocio, las pruebas realizadas fueron lo más generales con el propósito de reutilizar el código en otras pruebas similares, las pruebas cubren la mayor parte de los casos y aseguran que los diferentes métodos cumplan con su función, la integración con SELENIUM se prescinde ya que en los contados métodos en que podía ser utilizado resultaba redundante debido a que previamente existía una prueba con JUnit que “Testeaba” lo mismo y de forma más rápida y ágil por lo que finalmente quedó descartada del proyecto, cabe mencionar que esto de ninguna manera significa que el proyecto no cuenta con las pruebas unitarias pertinentes para asegurar el correcto funcionamiento de los componentes.
+5. Testing:  Se realizaron pruebas unitarias al código utilizando JUnit, asegurando el correcto funcionamiento de el controlador y de la lógica de negocio, las pruebas realizadas fueron lo más generales con el propósito de reutilizar el código en otras pruebas similares, las pruebas cubren la mayor parte de los casos y aseguran que los diferentes métodos cumplan con su función, la integración con SELENIUM se prescinde ya que en los contados métodos en que podía ser utilizado resultaba redundante debido a que previamente existía una prueba con JUnit que “Testeaba” lo mismo y de forma más rápida y ágil por lo que finalmente quedó descartada del proyecto, cabe mencionar que esto de ninguna manera significa que el proyecto no cuenta con las pruebas unitarias pertinentes para asegurar el correcto funcionamiento de los componentes.
 
 
 6. Autenticación y
@@ -52,7 +52,7 @@ Autorización:  Se agregó un proceso de autenticación mediante un login usando
 
 
 10. Templates y
-modularidad: Para la creación de las templates mi objetivo principal fue que fuera muy dinámico para el usuario utilizar la página, es por eso que desde que entramos vemos botones con los que podemos interactuar, como el de login que nos abre ventana de diálogo que nos redirecciona automáticamente a Dashboard, lo que permite una experiencia fluida, de igual forma los servicios CRUD de la base de datos se hacen todos desde el Dashboard solo oprimiendo botones que lanzan ventanas de diálogo, lo cual creo la hace muy dinámica e intuitiva.
+modularidad:  Para la creación de las templates mi objetivo principal fue que fuera muy dinámico para el usuario utilizar la página, es por eso que desde que entramos vemos botones con los que podemos interactuar, como el de login que nos abre ventana de diálogo que nos redirecciona automáticamente a Dashboard, lo que permite una experiencia fluida, de igual forma los servicios CRUD de la base de datos se hacen todos desde el Dashboard solo oprimiendo botones que lanzan ventanas de diálogo, lo cual creo la hace muy dinámica e intuitiva.
 La distribución del proyecto es pensado para que sea altamente modular, se crearon diferentes módulos, así como un módulo compartido para componentes comunes como el navbar y el footer, asi como módulos que se dividen por funcionalidad, lo que permite un mayor orden dentro del proyecto, cada módulo tiene asignado el nombre de su función, por ejemplo, Home, Login, Dashboard, Shared, etc.
 
 
