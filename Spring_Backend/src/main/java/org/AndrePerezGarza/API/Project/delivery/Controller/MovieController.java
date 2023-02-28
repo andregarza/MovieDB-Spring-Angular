@@ -19,6 +19,7 @@ import java.util.Optional;
 @Slf4j
 @RestController
 @RequestMapping("/movies")
+@CrossOrigin
 public class MovieController {
 
     // Movie object is created  fpr the variable injection from the MovieService interface
@@ -74,7 +75,7 @@ public class MovieController {
     // Gets the online repository link searched by the name on the link
     @GetMapping("/getLink/{name}")
     public String getLink(@PathVariable("name") String name){
-        log.info("Returning {} movie Link by name", name);
+        log.info("Returning {} movie Link by the name", name);
         return movie.getLink(name);
     }
 
