@@ -14,6 +14,13 @@ export class LogindialogComponent {
   name! : string;
   password! : string;
 
+  saveData(name: string, password: string){
+    sessionStorage.setItem('username', name);
+    sessionStorage.setItem('password', password);
+  }
+
+
+
   public login() {
     this.movieservice.login();
   }

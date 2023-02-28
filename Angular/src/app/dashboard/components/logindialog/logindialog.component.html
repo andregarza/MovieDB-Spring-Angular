@@ -13,5 +13,5 @@
   </div>
   <div mat-dialog-actions align="end">
     <button mat-button [mat-dialog-close] >No Thanks</button>
-    <button mat-button [mat-dialog-close] cdkFocusInitial (click)="login()" [routerLink]="['dashboard']" >Login</button>
+    <button mat-button [mat-dialog-close] cdkFocusInitial (click)="login()", (click)="saveData(name, password)" [routerLink]="['dashboard']" >Login</button>
   </div>

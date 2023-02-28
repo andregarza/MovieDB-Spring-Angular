@@ -24,7 +24,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @AllArgsConstructor
 @EnableWebSecurity
-@EnableMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
+
 public class SecurityConfig {
 
     private final UserDetailsService userDetailsService;
@@ -38,7 +38,7 @@ public class SecurityConfig {
         jwtAuthenticationFilter.setAuthenticationManager(authManager);
         jwtAuthenticationFilter.setFilterProcessesUrl("/login");
 
-        return http
+       return http
                 .csrf()
                 .disable()
                 .authorizeHttpRequests().
@@ -53,6 +53,8 @@ public class SecurityConfig {
                 .addFilter(jwtAuthenticationFilter)
                 .addFilterBefore(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
+
+
 
     }
 
@@ -87,7 +89,9 @@ public class SecurityConfig {
     public static void main(String[] args) {
 
 
-        System.out.println("pass: " + new BCryptPasswordEncoder().encode("Andre"));
+        String password = new BCryptPasswordEncoder().encode("Andre");
+        String name = "Andre";
+
 
     }
 
