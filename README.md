@@ -35,7 +35,7 @@ aplicación:  La app tiene la funcionalidad principal de guardar películas que 
 5. Testing:  Se realizaron pruebas unitarias al código utilizando JUnit, asegurando el correcto funcionamiento de el controlador y de la lógica de negocio, las pruebas realizadas fueron lo más generales con el propósito de reutilizar el código en otras pruebas similares, las pruebas cubren la mayor parte de los casos y aseguran que los diferentes métodos cumplan con su función, la integración con SELENIUM se prescinde ya que en los contados métodos en que podía ser utilizado resultaba redundante debido a que previamente existía una prueba con JUnit que “Testeaba” lo mismo y de forma más rápida y ágil por lo que finalmente quedó descartada del proyecto, cabe mencionar que esto de ninguna manera significa que el proyecto no cuenta con las pruebas unitarias pertinentes para asegurar el correcto funcionamiento de los componentes.
 
 
-6. y 7 Autenticación 
+6 y 7. Autenticación 
 Autorización y Perfilado de Usuarios:  Se agregó un proceso de autenticación mediante un login usando Spring Security, además que se agregaron perfiles con diferentes roles, los cuales definen el acceso que tienen a diferentes características y métodos dentro de la aplicación, 
 
 
